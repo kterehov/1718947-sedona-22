@@ -1,0 +1,14 @@
+.button--blue {
+  background: $color-four;
+  color: $color-three;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $color-fourteen;
+  }
+
+  &:disabled {
+    background: $color-sixteen;
+  }
+}

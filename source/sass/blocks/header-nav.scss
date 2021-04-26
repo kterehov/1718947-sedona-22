@@ -1,0 +1,20 @@
+.header-nav__item-link {
+  font-size: $font-size-one;
+  line-height: $font-line-one;
+  font-weight: $font-weight-bold;
+  color: $color-one;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-four;
+  }
+
+  &--active {
+    font-size: $font-size-one;
+    line-height: $font-line-one;
+    font-weight: $font-weight-bold;
+    color: $color-ten;
+    text-decoration: none;
+  }
+}

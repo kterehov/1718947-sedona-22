@@ -1,0 +1,22 @@
+.promo-list {
+  padding: 0;
+  margin: 0;
+}
+
+.promo-list__header {
+  font-size: $font-size-two;
+  font-weight: $font-weight-bold;
+  line-height: $font-line-one;
+  color: $color-one;
+}
+
+.promo-list__text {
+  font-size: $font-size-one;
+  font-weight: $font-weight-normal;
+  line-height: $font-line-three;
+  color: $color-two;
+}
+
+.promo-list__item {
+  padding: 50px;
+}

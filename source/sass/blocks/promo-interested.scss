@@ -1,0 +1,26 @@
+.promo-interested {
+  padding: 50px 0 50px 0;
+}
+
+.promo-interested__header {
+  font-size: $font-size-three;
+  font-weight: $font-weight-bold;
+  line-height: $font-line-one;
+  color: $color-one;
+  margin: 0 0 40px 0;
+}
+
+.promo-interested__text {
+  font-size: $font-size-one;
+  font-weight: $font-weight-normal;
+  line-height: $font-line-two;
+  color: $color-two;
+  margin: 0 0 40px 0;
+}
+
+.promo-interested__button {
+  font-size: $font-size-two;
+  font-weight: $font-weight-bold;
+  line-height: $font-line-one;
+  padding: 14px 121px;
+}

@@ -1,0 +1,40 @@
+/*
+one, two, three, four, five, six, seven, eight, nine, ten
+eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen
+eighteen, nineteen, twenty
+
+ */
+$font-size-one: 14px;
+$font-size-two: 21px;
+$font-size-three: 30px;
+$font-size-four: 18px;
+
+$font-line-one: 26px;
+$font-line-two: 24px;
+$font-line-three: 21px;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-family: "PT Sans", "Arial", "Tahoma", sans-serif;
+
+$color-one: #000000;
+$color-two: #333333;
+$color-three: #ffffff;
+$color-four: #81b3d2;
+$color-five: #eeeeee;
+$color-six: #f2f2f2;
+$color-seven: #e6e6e6;
+$color-eight: #dbdbdb;
+$color-nine: opacify($color-one, 0.6);
+$color-ten: #766357;
+$color-eleven: #604e43;
+$color-twelve: opacify($color-one, 0.3);
+$color-thirteen: opacify($color-ten, 0.3);
+$color-fourteen: #669ec0;
+$color-fifteen: #5496bd;
+$color-sixteen: #e5e5e5;
+$color-seventeen: opacify($color-three, 0.3);
+$color-eighteen: opacify($color-three, 0.6);
+$color-nineteen: opacify($color-two, 0.3);
+$color-twenty: #e7e5e5;
