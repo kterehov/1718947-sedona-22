@@ -1,0 +1,63 @@
+.review-form__header {
+  font-size: $font-size-four;
+  line-height: $font-line-one;
+  font-weight: $font-weight-bold;
+}
+
+.review-form__label {
+  font-size: $font-size-one;
+  line-height: $font-line-one;
+  font-weight: $font-weight-normal;
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.review-form__input {
+  background: $color-six;
+  font-size: $font-size-four;
+  line-height: $font-line-one;
+  font-weight: $font-weight-bold;
+  border: 0;
+  margin: 0;
+  padding: 14px;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    background: $color-sixteen;
+  }
+
+  &:active,
+  &:focus {
+    background: $color-three;
+    outline: 2px solid $color-sixteen;
+    outline-offset: -2px;
+  }
+}
+
+.review-form__button {
+  margin: 0;
+  background: $color-seven;
+  border: 0;
+}
+
+.review-form__textarea {
+  background: $color-six;
+  font-size: $font-size-four;
+  line-height: $font-line-one;
+  font-weight: $font-weight-bold;
+}
+
+.review-form__submit {
+  font-size: $font-size-two;
+  line-height: $font-line-one;
+  font-weight: $font-weight-bold;
+}
+
+.review-form__text {
+  font-size: $font-size-one;
+  line-height: $font-line-one;
+  font-weight: $font-weight-normal;
+}
