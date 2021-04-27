@@ -1,0 +1,19 @@
+.video__header {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-four;
+  line-height: $font-line-one;
+}
+
+.video__text {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-one;
+  line-height: $font-line-two;
+}
+
+.player__controls {
+  background: $color-six;
+}
+
+.player__range {
+  background: $color-twelve;
+}
