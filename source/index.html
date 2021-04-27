@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page-body">
   <div class="container">
     <header class="page-header">
       <nav class="header-nav">
-        <a class="header-nav__logo" href="index.html">
-          <img src="https://via.placeholder.com/138x70" class="header-nav__img" width="138" height="70" alt="Логотип">
-        </a>
         <ul class="header-nav__list">
-          <li class="header-nav__item header-nav__item-link--active">Главная</li>
+          <li class="header-nav__item">
+            <a class="header-nav__item-link header-nav__item-link--active" href="index.html" title="Информация о седоне">Главная</a>
+          </li>
           <li class="header-nav__item">
             <a class="header-nav__item-link" href="" title="Фотогалерея">Фото и видео</a>
           </li>
@@ -24,6 +24,12 @@
             <a class="header-nav__item-link" href="" title="HTML ACADEMY">HTML ACADEMY</a>
           </li>
         </ul>
+        <a class="header-nav__logo" href="index.html">
+          <picture class="header-nav__img">
+            <source srcset="https://via.placeholder.com/187x97" media="(min-width: 1200px)">
+            <img src="https://via.placeholder.com/108x84" alt="Логотип">
+          </picture>
+        </a>
       </nav>
       <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
@@ -33,7 +39,11 @@
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <section class="main-slider">
         <h2 class="visually-hidden">Промо блок</h2>
-        <img class="main-slider__img" src="https://via.placeholder.com/352x458" height="352" width="458" alt="Добро пожаловать в Седона">
+        <picture>
+          <source srcset="https://via.placeholder.com/1200x517" media="(min-width: 1200px)">
+          <source srcset="https://via.placeholder.com/768x518" media="(min-width: 768px)">
+          <img class="main-slider__img" src="https://via.placeholder.com/320x388" alt="Добро пожаловать в Седона">
+        </picture>
       </section>
 
       <section class="main-causes">
@@ -46,11 +56,15 @@
 
         <div class="promo-item">
           <article class="promo-item__article">
-            <h3 class="promo-item__header">Настоящий<br>городок</h3>
+            <h3 class="promo-item__header">Настоящий городок</h3>
             <span class="promo-item__number">№1</span>
             <p class="promo-item__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </article>
-          <img src="https://via.placeholder.com/800x256" class="promo-item__img" width="800" height="256" alt="Архитектура в Седона">
+          <picture class="promo-item__picture">
+            <source srcset="https://via.placeholder.com/800x256" media="(min-width: 1200px)">
+            <source srcset="https://via.placeholder.com/512x256" media="(min-width: 768px)">
+            <img class="promo-item__img" src="https://via.placeholder.com/320x260" alt="Архитектура в Седона">
+          </picture>
         </div>
 
         <ul class="promo-list">
@@ -64,6 +78,13 @@
             <p class="promo-list__text">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
           </li>
           <li class="promo-list__item">
+            <svg class="promo-list__img-gift" width="64" height="77" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 23.501H36.312C50.125 16.602 51.229 12.25 50.72 9.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737-1.261-1.138-3.095-2.264-5.763-2.028-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 000 26.37v11.322a2.882 2.882 0 002.879 2.869h.274V77h57.841V40.561h.103a2.882 2.882 0 002.88-2.869V26.37a2.882 2.882 0 00-2.88-2.869zM42.413 6.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V40.561h19.368v33.465h-.001zm0-36.502H3.046V26.538h22.457v10.986zm10.157 0v36.503h-7.174V26.538h7.174v10.986zm22.351 36.502H38.644V40.561h19.367v33.465zm2.92-36.502H38.644V26.538h22.287v10.986z" fill="#81B3D2"/>
+            </svg>
+            <span class="promo-list__header">Сувениры</span>
+            <p class="promo-list__text">Не только китайского, но и местного<br> производства!</p>
+          </li>
+          <li class="promo-list__item">
             <svg class="promo-list__img-food" width="75" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8.978 31.544h60.877c.041-.619.069-1.241.069-1.87 0-.393-.016-.78-.032-1.17v-.003C69.227 12.657 55.186 0 37.952 0 20.719 0 6.677 12.657 6.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zm12.979 10.921l-5.323-4.059-5.326 4.059-6.188-4.714 1.721-2.457 4.467 3.401 5.327-4.057 5.323 4.057 5.325-4.057 5.328 4.057 5.328-4.057 5.328 4.057 5.329-4.057 5.327 4.057 5.33-4.056 5.336 4.057 4.474-3.403 1.72 2.459-6.194 4.712-5.336-4.059-5.33 4.06-5.327-4.059-5.329 4.059-5.328-4.059-5.328 4.059-5.328-4.059-5.326 4.059zM5.051 46.71h65.803c2.274 0 4.134 1.94 4.134 4.313v3.504c0 2.372-1.861 4.313-4.135 4.313h-.93v1.053c0 5.536-4.342 10.065-9.648 10.065H15.629c-5.307 0-9.648-4.529-9.648-10.065V58.84h-.93c-2.274 0-4.135-1.941-4.135-4.313v-3.504c0-2.373 1.861-4.313 4.135-4.313zm55.225 20.205c3.711 0 6.73-3.15 6.73-7.021h-.001v-1.053H8.898v1.053c0 3.871 3.02 7.021 6.731 7.021h44.647zm11.795-12.388c0 .688-.558 1.271-1.218 1.271H5.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zm-5.098-26.026c-.671-14.142-13.43-25.458-29.021-25.458-15.591 0-28.348 11.316-29.021 25.458h58.042z" fill="#81B3D2"/>
               <path d="M37.952 17.29c1.074 0 1.945-.909 1.945-2.03 0-1.121-.87-2.03-1.945-2.03-1.074 0-1.945.909-1.945 2.03 0 1.121.87 2.03 1.945 2.03zM30.172 12.26c1.075 0 1.946-.909 1.946-2.03 0-1.121-.871-2.03-1.946-2.03s-1.946.909-1.946 2.03c0 1.121.871 2.03 1.946 2.03zM45.732 12.26c1.075 0 1.946-.909 1.946-2.03 0-1.121-.871-2.03-1.946-2.03s-1.946.909-1.946 2.03c0 1.121.871 2.03 1.946 2.03z" fill="#81B3D2"/>
@@ -71,40 +92,37 @@
             <span class="promo-list__header">Еда</span>
             <p class="promo-list__text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
-          <li class="promo-list__item">
-            <svg class="promo-list__img-gift" width="64" height="77" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M61.097 23.501H36.312C50.125 16.602 51.229 12.25 50.72 9.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737-1.261-1.138-3.095-2.264-5.763-2.028-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 000 26.37v11.322a2.882 2.882 0 002.879 2.869h.274V77h57.841V40.561h.103a2.882 2.882 0 002.88-2.869V26.37a2.882 2.882 0 00-2.88-2.869zM42.413 6.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V40.561h19.368v33.465h-.001zm0-36.502H3.046V26.538h22.457v10.986zm10.157 0v36.503h-7.174V26.538h7.174v10.986zm22.351 36.502H38.644V40.561h19.367v33.465zm2.92-36.502H38.644V26.538h22.287v10.986z" fill="#81B3D2"/>
-            </svg>
-            <span class="promo-list__header">Сувениры</span>
-            <p class="promo-list__text">Не только китайского, но и местного<br> производства!</p>
-          </li>
         </ul>
 
         <div class="promo-item">
-          <article class="promo-item__article">
-            <h3 class="promo-item__header">Там есть<br>Мост дьявола</h3>
+          <article class="promo-item__article promo-item__article--inverse">
+            <h3 class="promo-item__header">Там есть Мост дьявола</h3>
             <span class="promo-item__number">№2</span>
             <p class="promo-item__text">Да, по нему можно пройти! Если конечно
               вы осмелитесь</p>
           </article>
-          <img src="https://via.placeholder.com/800x256" class="promo-item__img" height="256" width="800" alt="Мост дьявола в Седоне">
+          <picture class="promo-item__picture">
+            <source srcset="https://via.placeholder.com/800x256" media="(min-width: 1200px)">
+            <source srcset="https://via.placeholder.com/512x256" media="(min-width: 768px)">
+            <img class="promo-item__img" src="https://via.placeholder.com/320x260" alt="Мост дьявола в Седоне">
+          </picture>
         </div>
 
         <div class="promo-item promo-item--dark">
           <article class="promo-item__article">
-            <h3 class="promo-item__header">небольшая<br>площадь</h3>
+            <h3 class="promo-item__header">небольшая площадь</h3>
             <span class="promo-item__number">№3</span>
-            <p class="promo-item__text">все достопримечательности<br>находятся очень близко</p>
+            <p class="promo-item__text">Все интересные места находятся очень близко</p>
           </article>
           <article class="promo-item__article">
             <h3 class="promo-item__header">красивая<br>дорога</h3>
             <span class="promo-item__number">№4</span>
-            <p class="promo-item__text">ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+            <p class="promo-item__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </article>
           <article class="promo-item__article">
             <h3 class="promo-item__header">мало<br>туристов</h3>
             <span class="promo-item__number">№5</span>
-            <p class="promo-item__text">большинство едет в гранд каньон<br>и толпится там</p>
+            <p class="promo-item__text">Большинство едет в гранд каньон и толпится там</p>
           </article>
         </div>
 
@@ -118,8 +136,11 @@
 
       <section class="promo-map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A170594aec73d609c30f0d0a3af65e06e85aceb77ba6a0ac88d86ddc6478358e3&amp;lang=ru_RU&amp;scroll=true" width="1200" height="594" style="border: 0;" title="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона"></iframe>
-      </section>
+        <picture>
+          <source srcset="https://via.placeholder.com/1200x350" media="(min-width: 1200px)">
+          <source srcset="https://via.placeholder.com/768x350" media="(min-width: 768px)">
+          <img class="promo-item__img" src="https://via.placeholder.com/320x350" alt="Архитектура в Седона">
+        </picture>      </section>
     </main>
 
     <footer class="main-footer">

@@ -1,14 +1,18 @@
 .promo-header {
-  padding-top: 43px;
-  padding-bottom: 52px;
+  padding: 43px 25px 52px 25px;
   line-height: $font-line-one;
+  text-align: center;
 }
 
 .promo-header__why {
-  font-size: $font-size-two;
+  font-size: $font-size-four;
   font-weight: $font-weight-bold;
   color: $color-one;
   margin: 0 0 43px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-two;
+  }
 }
 
 .promo-header__text {

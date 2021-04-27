@@ -1,6 +1,11 @@
 .promo-item {
   background: $color-four;
   color: $color-three;
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .promo-item--dark {
@@ -17,15 +22,33 @@
   font-size: $font-size-one;
   font-weight: $font-weight-normal;
   line-height: $font-line-three;
-  padding: 47px 52px 57px 53px;
+  padding: 47px 35px 57px 35px;
+  text-align: center;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 35px 41px 25px;
+
+    &--inverse {
+      order: 3;
+    }
+  }
+}
+
+.promo-item__picture {
+  order: 2;
 }
 
 .promo-item__header {
-  font-size: $font-size-two;
+  font-size: $font-size-four;
   font-weight: $font-weight-bold;
   line-height: $font-line-one;
   padding: 0;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-two;
+  }
 }
 
 .promo-item__number {
