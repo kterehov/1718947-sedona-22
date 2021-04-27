@@ -1,13 +1,23 @@
 .promo-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .promo-list__header {
-  font-size: $font-size-two;
+  font-size: $font-size-four;
   font-weight: $font-weight-bold;
   line-height: $font-line-one;
   color: $color-one;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-two;
+  }
 }
 
 .promo-list__text {

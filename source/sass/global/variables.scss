@@ -1,7 +1,7 @@
 /*
 one, two, three, four, five, six, seven, eight, nine, ten
 eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen
-eighteen, nineteen, twenty
+eighteen, nineteen, twenty, twenty-one
 
  */
 $font-size-one: 14px;
@@ -12,6 +12,7 @@ $font-size-four: 18px;
 $font-line-one: 26px;
 $font-line-two: 24px;
 $font-line-three: 21px;
+$font-line-four: 40px;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -38,3 +39,7 @@ $color-seventeen: opacify($color-three, 0.3);
 $color-eighteen: opacify($color-three, 0.6);
 $color-nineteen: opacify($color-two, 0.3);
 $color-twenty: #e7e5e5;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;

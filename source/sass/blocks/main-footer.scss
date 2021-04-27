@@ -1,3 +1,12 @@
+.main-footer {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .main-footer__link-company {
   font-size: $font-size-two;
   line-height: $font-line-one;
@@ -10,4 +19,36 @@
   line-height: $font-line-one;
   font-weight: $font-weight-normal;
   color: $color-one;
+}
+
+.main-footer__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__item {
+  margin-right: 10px;
+  display: block;
+  height: 46px;
+  width: 48px;
+  background: $color-four;
+}
+
+.main-footer__company {
+  margin-bottom: 20px;
+}
+
+.main-footer__social {
+  margin-bottom: 20px;
 }
