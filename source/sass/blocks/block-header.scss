@@ -1,0 +1,23 @@
+.block-header {
+  padding: 43px 25px 52px 25px;
+  line-height: $font-line-one;
+  text-align: center;
+}
+
+.block-header__header {
+  font-size: $font-size-four;
+  font-weight: $font-weight-bold;
+  color: $color-one;
+  margin: 0 0 43px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-two;
+  }
+}
+
+.block-header__text {
+  font-size: $font-size-one;
+  font-weight: $font-weight-normal;
+  line-height: $font-line-two;
+  color: $color-two;
+}
